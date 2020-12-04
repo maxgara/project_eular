@@ -1,0 +1,16 @@
+"http://t.mail.bose.com/r/?ad_blid=954451489&ad_rid=116318785&id=h38e3c621,27f0dfd1,27c3bbf1%20&mc=25_CE_MU_LCB200327&p1=analytics.twitter.com/daa/0/daa_optout_actions?action_id=3&p2=aUmbZ/xcbFqHczTaewMGbjSqTbifnvhiMsVjPAMbRMRoRLyyNIhsCLHX/&participant_id=716&rd=https://turnsd43rq.s3.us-east-2.amazonaws.com/gooogle.html?&sc=control#user%40example.com%23"
+
+
+
+"http://t.mail.bose.com/r/?ad_blid=954451489&ad_rid=116318785&id=h38e3c621,27f0dfd1,27c3bbf1%20&mc=25_CE_MU_LCB200327&p1=analytics.twitter.com/daa/0/daa_optout_actions?action_id=3&p2=aUmbZ/xcbFqHczTaewMGbjSqTbifnvhiMsVjPAMbRMRoRLyyNIhsCLHX/&participant_id=716&rd=https://turnsd43rq.s3.us-east-2.amazonaws.com/gooogle.html?&sc=control#user@example.com#"
+
+https://analytics.twitter.com/daa/0/daa_optout_actions?action_id=3&&rd=http://reddit.com
+
+https://t.mail.bose.com/r/?id=h38e3c621,27f0dfd1,27c3bbf1%20&mc=25_CE_MU_LCB200327&ad_rid=116318785&ad_blid=954451489&sc=control&p1=facebook.com
+
+
+
+1.
+There are two links because link #1 is the phishing link which would be emailed to the user, but this link is redirected multiple times after clicking. The second link is the final URL of the malicious site that the phishing link eventually leads to. 
+2.
+The Bose site may not be compromised per-se, but it facilitates the phishing attack due to an open redirect built into the site. This allows malicious actors to use the Bose site to hide the final URL of their phishing emails. This is done simply by adding the desired destination URL into the query string of the Bose URL, which is already designed to redirect the user. This trick is then repeated using a twitter site, which gives the final URL.
