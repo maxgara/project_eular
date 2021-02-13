@@ -25,6 +25,8 @@ int sum_arr(){
 }
 
 int get_combinations(int target_sum,int limit){
+  static int calls=0;
+  calls++;
   static int total_combinations=0;
   clear_upto(limit+1);
   if(limit==0){
@@ -38,14 +40,13 @@ int get_combinations(int target_sum,int limit){
       coin_count[limit]=i;
       get_combinations(target_sum,limit-1);
     }
+    printf("calls:%d\n",calls);
   }
 return total_combinations;
 }
 
 int main(int argc, char *argv[]){
 int target_sum = (argc>1) ? atoi(argv[1]) : 200;
-int denominations[]={1,2,5};
-int coin_count[COMPLEXITY];
 clear_upto(COMPLEXITY);
 int total_combinations=get_combinations(target_sum,COMPLEXITY-1);
 printf("total_combinations:%d\n",total_combinations);

@@ -1,0 +1,7 @@
+import os
+
+fp = open("common_words.txt","r")
+words = fp.read()
+fp.close()
+fp.open("p059_cipher.txt","r")
+ctext=fp.read()
